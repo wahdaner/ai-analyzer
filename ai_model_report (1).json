@@ -1,0 +1,76 @@
+{
+    "project": "EUR/USD AI Analyzer",
+    "report_version": "1.0",
+    "generated_at": "2026-11-21T09:53:39.550019+00:00",
+    "model": "RandomForestClassifier",
+    "stage_2": {
+        "accuracy": 0.5881,
+        "training_data": 3816,
+        "testing_data": 954,
+        "balanced_accuracy": 0.5855
+    },
+    "stage_3": {
+        "baseline_accuracy": 0.5094,
+        "model_accuracy": 0.5881,
+        "improvement_percentage_points": 7.86,
+        "confusion_matrix": [
+            [
+                349,
+                137
+            ],
+            [
+                256,
+                212
+            ]
+        ]
+    },
+    "stage_4": {
+        "temporal_stability": [
+            {
+                "Period": "Test Window 1",
+                "Training": 2862,
+                "Testing": 954,
+                "Accuracy (%)": 51.68,
+                "Balanced Accuracy (%)": 51.26
+            },
+            {
+                "Period": "Test Window 2",
+                "Training": 3816,
+                "Testing": 954,
+                "Accuracy (%)": 58.81,
+                "Balanced Accuracy (%)": 58.55
+            }
+        ]
+    },
+    "feature_importance": [
+        {
+            "Feature": "return",
+            "Importance": 0.5703025056209463
+        },
+        {
+            "Feature": "MA20",
+            "Importance": 0.15202575411694522
+        },
+        {
+            "Feature": "volatility_20",
+            "Importance": 0.1418513854950801
+        },
+        {
+            "Feature": "MA50",
+            "Importance": 0.13582035476702833
+        },
+        {
+            "Feature": "time_gap",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "flat_candle",
+            "Importance": 0.0
+        }
+    ],
+    "data_quality": {
+        "total_rows": 9844,
+        "flat_candle_count": 9844,
+        "flat_candle_percentage": 100.0
+    }
+}
