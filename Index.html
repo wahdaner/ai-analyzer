@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Analyzer EUR/USD</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #0b1120;
+  color: #e5e7eb;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+h1 { color: #38bdf8; }
+.subtitle { color: #94a3b8; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+.card {
+  background: #172033;
+  padding: 18px;
+  border-radius: 14px;
+  border: 1px solid #26344c;
+}
+.label { color: #94a3b8; font-size: 13px; }
+.value { font-size: 26px; font-weight: bold; margin-top: 10px; }
+.blue { color: #38bdf8; }
+.green { color: #4ade80; }
+.orange { color: #fb923c; }
+.bar {
+  height: 22px;
+  display: flex;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+.flat { background: #f59e0b; width: 51.45%; }
+.changed { background: #38bdf8; width: 48.55%; }
+.small { color: #94a3b8; font-size: 13px; }
+.section { margin-top: 20px; }
+.status {
+  padding: 12px;
+  border-radius: 10px;
+  background: #102b25;
+  color: #4ade80;
+}
+footer {
+  margin-top: 25px;
+  font-size: 12px;
+  color: #64748b;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>AI Analyzer</h1>
+<p class="subtitle">EUR/USD — Dashboard Kualitas Data</p>
+
+<div class="grid">
+  <div class="card">
+    <div class="label">Total Data</div>
+    <div class="value blue">9,844</div>
+  </div>
+  <div class="card">
+    <div class="label">Candle Stagnan</div>
+    <div class="value orange">5,064</div>
+  </div>
+  <div class="card">
+    <div class="label">Candle Berubah</div>
+    <div class="value green">4,780</div>
+  </div>
+  <div class="card">
+    <div class="label">Data Duplikat</div>
+    <div class="value">0</div>
+  </div>
+</div>
+
+<div class="card section">
+  <h3>Aktivitas Data</h3>
+  <div class="bar">
+    <div class="flat"></div>
+    <div class="changed"></div>
+  </div>
+  <p class="small">Stagnan: 51.45% &nbsp; | &nbsp; Berubah: 48.55%</p>
+</div>
+
+<div class="card section">
+  <h3>Kualitas Dataset</h3>
+  <p>Celah waktu: <b>8</b></p>
+  <p>Duplikat: <b>0</b></p>
+  <p>Periode: <b>12–20 November 2026 UTC</b></p>
+</div>
+
+<div class="card section">
+  <h3>Status Proyek</h3>
+  <p class="status">✓ Pengolahan data selesai</p>
+  <p class="status">✓ Visualisasi berhasil</p>
+  <p class="status">✓ Audit model awal selesai</p>
+  <p class="small">
+    Model masih dalam tahap penelitian.
+    Hasil pengujian awal belum membuktikan kemampuan
+    memprediksi pergerakan pasar di masa depan.
+  </p>
+</div>
+
+<footer>
+AI Analyzer • Historical Data • Bukan data live • Bukan sinyal transaksi
+</footer>
+
+</div>
+</body>
+</html>
